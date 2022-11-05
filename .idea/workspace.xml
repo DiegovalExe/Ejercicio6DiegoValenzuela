@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01cc5a0f-af4b-42e9-9eb4-98f935f8fb80" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/Cancion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ipod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
+    <list default="true" id="01cc5a0f-af4b-42e9-9eb4-98f935f8fb80" name="Changes" comment="Clases creadas implementacion correcta de interfaces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cancion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cancion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667675383547</updated>
-      <workItem from="1667675384874" duration="2513000" />
+      <workItem from="1667675384874" duration="4208000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1667676432852</created>
@@ -58,7 +56,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667676432852</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Clases creadas implementacion correcta de interfaces">
+      <created>1667678165059</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667678165060</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,6 +82,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Clases creadas implementacion correcta de interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clases creadas implementacion correcta de interfaces" />
   </component>
 </project>

@@ -9,51 +9,51 @@ public class Cancion implements ICancion{
 
     @Override
     public void setTitle(String _title) {
-
+        this.title = _title;
     }
 
     @Override
     public String getTitle() {
-        return null;
+        return title;
     }
 
     @Override
     public void setArtist(String _artist) {
-
+        this.artist = _artist;
     }
 
     @Override
     public String getArtist() {
-        return null;
+        return artist;
     }
 
     @Override
     public void setAlbum(String _album) {
-
+        this.album = _album;
     }
 
     @Override
     public String getAlbum() {
-        return null;
+        return album;
     }
 
     @Override
     public void setDuration(String _duration) {
-
+        this.duration = duration;
     }
 
     @Override
     public String getDuration() {
-        return null;
+        return duration;
     }
 
     @Override
     public void setID(int _id) {
-
+        this.ID = _id;
     }
 
     @Override
     public int getID() {
-        return 0;
+        return ID;
     }
 }
