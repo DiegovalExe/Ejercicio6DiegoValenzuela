@@ -196,6 +196,7 @@ public class Ipod implements IIpod_simulator{
             estado = estado + "Encendido, ";
         }else {
             estado = estado + " Apagado, ";
+            return estado;
         }
 
         if(_isLocked){
@@ -205,7 +206,7 @@ public class Ipod implements IIpod_simulator{
         }
 
         if(_isPlaying){
-            estado = estado + " Reproduciendo: "+ _actualSong.getTitle() + " Del artista: "+_actualSong.getArtist()+" de el album: "+_actualSong.getAlbum()+" Duracion: "+_actualSong.getDuration();
+            estado = estado + " Reproduciendo: "+ _actualSong.getTitle() + " Del artista: "+_actualSong.getArtist()+" del album: "+_actualSong.getAlbum()+" Duracion: "+_actualSong.getDuration();
         }else{
             estado = estado + "sin reproducir nada";
         }
@@ -219,32 +220,51 @@ public class Ipod implements IIpod_simulator{
      */
     @Override
     public boolean isValidIndex(int index) {
-        return false;
+        if(index <= canciones.size()){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     /***
      * Se agrega una cancion para ser instanciada en el metodo y agregada a la lista
-     * @param _titulo
-     * @param _artista
-     * @param _album
-     * @param _duracion
-     * @param _id
+     * @param _titulo titulo de la cancion
+     * @param _artista artista de la cancion
+     * @param _album album de la cancion
+     * @param _duracion duracion de la cancion
+     * @param _id id de la cancion
      * @exception Exception si el listado esta lleno
      */
     @Override
     public void addSongToList(String _titulo, String _artista, String _album, String _duracion, int _id) throws Exception {
+        if(canciones.size() < 50){
+            Cancion cn = new Cancion();
+            cn.setTitle(_titulo);
+            cn.setAlbum(_album);
+            cn.setArtist(_artista);
+            cn.setDuration(_duracion);
+            cn.setID(_id);
+            canciones.add(cn);
+        }else{
+            throw new Exception("LIMITE MAXIMO DE CANCIONES ALCANZADAS");
+        }
 
     }
 
     /**
      * Este metodo elimina una cancion de una posicion determinada
      *
-     * @param index
+     * @param index indice de la cancion a eliminar
      * @throws Exception Cuando el indice esta fuera de rango
      */
     @Override
     public void deleteSongFromList(int index) throws Exception {
-
+        if(index <= canciones.size()){
+            canciones.remove(index);
+        }else{
+            throw new Exception("INDICE FUERA DE RANGO");
+        }
     }
 
     /**
@@ -255,6 +275,10 @@ public class Ipod implements IIpod_simulator{
      */
     @Override
     public void deleteSongFromTop10(int index) throws Exception {
-
+        if(index <= fav.size()){
+            fav.remove(index);
+        }else{
+            throw new Exception("INDICE FUERA DE RANGO");
+        }
     }
 }
