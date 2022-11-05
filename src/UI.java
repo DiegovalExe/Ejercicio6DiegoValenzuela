@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class UI {
 
-    public void initial(){
+    public static int initial(){
+        Scanner sc = new Scanner(System.in);
         System.out.println("----BIENVENIDO A SU IPOD----");
         System.out.println("");
         System.out.println("----Ingrese el numeor de la opcion a realizar----");
@@ -14,5 +17,6 @@ public class UI {
         System.out.println("7. Agegar favoritas");
         System.out.println("8. Ir a alguna favorita");
         System.out.println("9. Mostrar estado");
+        return sc.nextInt();
     }
 }
