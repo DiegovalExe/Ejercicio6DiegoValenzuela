@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01cc5a0f-af4b-42e9-9eb4-98f935f8fb80" name="Changes" comment="Algunos metodos del ipod implementados">
+    <list default="true" id="01cc5a0f-af4b-42e9-9eb4-98f935f8fb80" name="Changes" comment="Metodos del ipod implementados completamente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ipod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ipod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667675383547</updated>
-      <workItem from="1667675384874" duration="13289000" />
+      <workItem from="1667675384874" duration="18869000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1667676432852</created>
@@ -84,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667689485772</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Metodos del ipod implementados completamente">
+      <created>1667691836933</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667691836933</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +116,7 @@
     <MESSAGE value="Clase cancion correctamente implementada con sus metodos llenos" />
     <MESSAGE value="Se preparo el controller y el ui" />
     <MESSAGE value="Algunos metodos del ipod implementados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Algunos metodos del ipod implementados" />
+    <MESSAGE value="Metodos del ipod implementados completamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metodos del ipod implementados completamente" />
   </component>
 </project>

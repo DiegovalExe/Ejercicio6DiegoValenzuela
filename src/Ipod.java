@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Ipod implements IIpod_simulator{
 
-    private float volumen;
-    private int index;
+    private float volumen = 0;
+    private int index = 0;
     public ArrayList<Cancion> canciones = new ArrayList<>();
     public ArrayList<Cancion> fav = new ArrayList<>();
 
@@ -74,6 +74,7 @@ public class Ipod implements IIpod_simulator{
             return -1001;
         }
         else{
+            this.index = actual_index - 1;
             return actual_index - 1;
         }
     }
@@ -90,6 +91,7 @@ public class Ipod implements IIpod_simulator{
             return -2002;
         }
         else{
+            this.index = actual_index + 1;
             return actual_index + 1;
         }
     }
@@ -158,6 +160,7 @@ public class Ipod implements IIpod_simulator{
     @Override
     public ICancion selectSpecificFavoriteSong(int index) throws Exception {
         if(index < fav.size()){
+            this.index = index;
             return fav.get(index);
         }
         else{
@@ -190,7 +193,7 @@ public class Ipod implements IIpod_simulator{
      */
     @Override
     public String getStatus(boolean _isON, boolean _isLocked, boolean _isPlaying, ICancion _actualSong) {
-        String estado = "Estado: ";
+        String estado = "Volumen: "+ this.volumen+" Estado: ";
 
         if(_isON){
             estado = estado + "Encendido, ";
