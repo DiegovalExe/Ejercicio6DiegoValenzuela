@@ -39,7 +39,7 @@ public class Cancion implements ICancion{
 
     @Override
     public void setDuration(String _duration) {
-        this.duration = duration;
+        this.duration = _duration;
     }
 
     @Override

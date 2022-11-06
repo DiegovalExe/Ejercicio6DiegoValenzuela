@@ -66,7 +66,7 @@ public class Controller {
                 break;
             case 9:
                 if(ip.estado){
-                    ip.getStatus(ip.estado,ip.bloqueado,true,ip.selectSpecificSong(ip.getActualIndex()));
+                    System.out.println(ip.getStatus(ip.estado,ip.bloqueado,true,ip.selectSpecificSong(ip.getActualIndex())));
                 }else {
                     UI.err2();
                 }
@@ -78,7 +78,7 @@ public class Controller {
         menu();
     }
     public static void addAllSongs() throws Exception {
-        ip.addSongToList("Tranquilito","Gerardo Ortiz - Aleman","Tranquilito","2:50",1);
+        ip.addSongToList("Tranquilito","Gerardo Ortiz - Aleman","Tranquilito","",1);
         ip.addSongToList("No me rajo","Hadrian","No no rajo","2:45",2);
         ip.addSongToList("By the Sword","iamjakehill","agressive phonk","3:50",3);
         ip.addSongToList("141 - Version banda","Banda MS","141","2:40",3);
