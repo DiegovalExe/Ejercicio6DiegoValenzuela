@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class UI {
     static Scanner sc = new Scanner(System.in);
+
+    /**
+     * Menu principal
+     * @return opcion del usuario ingresada
+     */
     public static int initial(){
 
         System.out.println("----BIENVENIDO A SU IPOD----");
@@ -19,16 +24,32 @@ public class UI {
         System.out.println("9. Mostrar estado");
         return sc.nextInt();
     }
+
+    /**
+     * Error 1
+     */
     public static void err1(){
         System.out.println("OPCION INCORRECTA");
     }
 
+    /**
+     * Error 2
+     */
     public static void err2(){
         System.out.println("Dispositivo apagado, enciendalo para continuar");
     }
+
+    /**
+     * Error 3
+     */
     public static void err3(){
         System.out.println("Dispositivo bloqueado o apagado, desbloquelo o enciendalo para continuar");
     }
+
+    /**
+     * Obtiene la cancion a reproducir
+     * @return Opcion ingresada
+     */
     public static int requestFavoriteSong(){
         System.out.println("Ingrese el inidide de la cancion favorita a reproducir");
         return sc.nextInt();
